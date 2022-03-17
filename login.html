@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bootstrap Simple Contact Form</title>
+  <!-- Google fonts - Poppins -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+  <!-- Choices CSS-->
+  <link rel="stylesheet" href="assets1/vendor/choices.js/public/assets/styles/choices.min.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="assets1/css/style.default.css" id="theme-stylesheet">
+ 
+  <link rel="shortcut icon" href="assets/images/logo/favicon1.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    form .row,
+    .g-3 {
+      font-size: larger;
+      font-weight: 500;
+      color: black;
+      margin: 30px;
+      padding: 40px;
+      margin-left: 180px;
+      margin-right: 180px;
+      background-color: rgb(0 0 0 / 10%);
+    }
+
+    .content-inner {
+      background-color: aliceblue;
+    }
+
+    .form-control {
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark d-flex">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Business Exclusive</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto sm-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <!-- <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+      </li> -->
+          <!-- <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact Us</a>
+      </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">IT</a></li>
+              <li><a class="dropdown-item" href="#">Comp</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Write For Us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form> -->
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- sidebar and contact Page -->
+  <div class="page-content d-flex align-items-stretch">
+    <!-- Side Navbar -->
+    <nav class="side-navbar z-index-40">
+      <!-- Sidebar Header-->
+      <div class="sidebar-header d-flex align-items-center py-4 px-3">
+        <img class="avatar shadow-0 img-fluid rounded-circle" src="assets/images/logo/favicon1.png" alt="...">
+        <div class="ms-3 title">
+          <h1 class="h4 mb-2">Admin</h1>
+          <p class="text-sm text-gray-500 fw-light mb-0 lh-1"></p>
+        </div>
+      </div>
+      <!-- Sidebar Navidation Menus--><span
+        class="text-uppercase text-gray-400 text-xs letter-spacing-0 mx-3 px-2 heading">Main</span>
+      <ul class="list-unstyled py-4">
+        <li class="sidebar-item "><a class="sidebar-link" href="dashboard.html">
+            <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+              <use xlink:href="#real-estate-1"> </use>
+            </svg>Dashboard </a></li>
+        <li class="sidebar-item"><a class="sidebar-link" href="gallery.html">
+            <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+              <use xlink:href="#sales-up-1"> </use>
+            </svg>gallery </a></li>
+        <!-- <li class="sidebar-item"><a class="sidebar-link" href="forms.html">
+            <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+                <use xlink:href="#survey-1"> </use>
+            </svg>Forms </a></li> -->
+        <li class="sidebar-item"><a class="sidebar-link" href="contact.html">
+            <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+              <use xlink:href="#portfolio-grid-1"> </use>
+            </svg>Contact us </a></li>
+
+        <li class="sidebar-item active"><a class="sidebar-link" href="login.html">
+            <svg class="svg-icon svg-icon-sm svg-icon-heavy me-xl-2">
+              <use xlink:href="#disable-1"> </use>
+            </svg>Login / sign in </a></li>
+      </ul>
+
+    </nav>
+
+
+
+    <div class="content-inner  w-100 ">
+      <!-- Page Header-->
+      <header class="bg-white shadow-sm px-4 py-3 z-index-20">
+        <div class="container-fluid px-0">
+          <h2 class="mb-0 p-1">Login</h2>
+        </div>
+      </header>
+
+
+
+      <!-- form -->
+
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label" style="color: black;">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label" style="color: black;">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="**********">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label" style="color: black;">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label" style="color: black;">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label" style="color: black;">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label" style="color: black;">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <!-- <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div> -->
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+
+
+      <!-- contact -->
+      <!-- <div class="container-xl">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="contact-form">
+          <h1>Contact Us</h1>
+          <p class="hint-text">We'd love to hear from you, please drop us a line if you've any query.</p>
+          <form action="/examples/actions/confirmation.php" method="post">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputFirstName">First Name</label>
+                  <input type="text" class="form-control" id="inputFirstName" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputLastName">Last Name</label>
+                  <input type="text" class="form-control" id="inputLastName" required>
+                </div>
+              </div>
+            </div>            
+            <div class="form-group">
+              <label for="inputEmail">Email Address</label>
+              <input type="email" class="form-control" id="inputEmail" required>
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Message</label>
+              <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+      <!-- Page Footer-->
+      <footer class="position-absolute bottom-0 bg-darkBlue text-white text-center py-3 w-100 text-xs" id="footer">
+        <div class="container-fluid">
+          <div class="row gy-2">
+            <div class="col-sm-6 text-sm-start">
+              <p class="mb-0">Your company &copy; 2022-2023</p>
+            </div>
+            <div class="col-sm-6 text-sm-end">
+              <p class="mb-0">Design by <a href="#" class="text-white text-decoration-none">Business
+                  Exclusive</a></p>
+              <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
